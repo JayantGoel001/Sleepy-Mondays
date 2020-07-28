@@ -1,0 +1,63 @@
+::placeholder, a, a:hover {
+    color: inherit;
+}
+
+body {
+     cursor: default; overflow-x: none;
+ }
+body, button, input {
+     font-family: 'Poppins', sans-serif;
+ }
+body > section:not([id="landing"]) {
+    background-color: white;
+}
+input {
+     outline: none; border: none;
+ }
+figure, p {
+     margin: 0;
+ }
+
+.nav-item .nav-link:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: #292929 !important;
+    opacity: .7;
+}
+.navbar-toggler {
+    background-color: transparent !important;
+    opacity: .8;
+    border-width: 1px !important;
+}
+.btn {
+     padding: .2em 1.4em !important;
+ }
+.bg-white {
+     background-color: white !important;
+ }
+.bg-fancy {
+    background-color: #2e38f2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='71' height='71' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='52' height='52' fill-opacity='0.6' fill='%232650ff'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+.dimmed {
+     background-color: rgba(255, 255, 255, .8);
+ }
+.text-muted {
+    color: inherit !important;
+    opacity: .9;
+}
+.bg-img-default {
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.divider-sm {
+    width: 100px;
+    border-width: 6px;
+    border-color: inherit;
+}
+.shadow-2 {
+    position: relative;
+    box-shadow: 0 0 25px rgba(97, 97, 97, .52);
+}
