@@ -109,3 +109,16 @@ figure, p {
 #our-team .card:hover > div{
     transform: translateX(0);
 }
+
+#info{
+    background-color: #54C65E;
+}
+
+#info .col-md-4:nth-child(2){
+    transform: scale(1.1);
+}
+@media (max-width:768px) {
+    #info .col-md-4:nth-child(2){
+        transform: scale(1);
+    }
+}
