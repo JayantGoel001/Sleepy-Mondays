@@ -61,3 +61,14 @@ figure, p {
     position: relative;
     box-shadow: 0 0 25px rgba(97, 97, 97, .52);
 }
+
+#landing{
+    background-image: linear-gradient(to right,rgba(184,184,184,0.26),rgba(184,184,184,0.44));
+}
+
+#landing video{
+    z-index: -100;
+    min-width: 100%;
+    transform: scale(0.5) translate(-50%,-50%);
+    filter: blur(10px);
+}
