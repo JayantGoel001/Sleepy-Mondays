@@ -72,3 +72,20 @@ figure, p {
     transform: scale(0.5) translate(-50%,-50%);
     filter: blur(10px);
 }
+#landing #content{
+    margin-top: 16vh;
+    padding-bottom: 20vh;
+}
+
+#landing button{
+    background-color: white;
+    color: #292929;
+    border: 2px solid white;
+}
+#landing button:hover{
+    background-color: transparent;
+    color: white;
+}
+#our-team{
+    padding: 30vh 0;
+}
