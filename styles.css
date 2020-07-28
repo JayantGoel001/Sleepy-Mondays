@@ -87,5 +87,25 @@ figure, p {
     color: white;
 }
 #our-team{
-    padding: 30vh 0;
+    padding: 5.6rem 0;
+}
+
+#our-team img{
+    height: 270px;
+    object-fit: cover;
+}
+
+#our-team i{
+    transition: opacity 0.2s;
+}
+#our-team i:hover{
+    transition: opacity 0.5s;
+}
+#our-team .card > div{
+    background-color: rgba(30, 30, 30, 0.7);
+    transform: translateX(-100%);
+    transition: transform 0.35s;
+}
+#our-team .card:hover > div{
+    transform: translateX(0);
 }
