@@ -105,3 +105,14 @@ figure, p {
     background-color: rgba(30,30,30,0.7);
     transform: translateX(0);
 }
+#info{
+    background-color: #64C65E;
+}
+#info .col-md-4:nth-child(2){
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    #info .col-md-4:nth-child(2){
+        transform: scale(1.0);
+    }
+}
