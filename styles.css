@@ -1,23 +1,23 @@
 ::placeholder, a, a:hover {
     color: inherit;
 }
-
 body {
-     cursor: default; overflow-x: none;
- }
+    cursor: default;
+    overflow-x: hidden;
+}
 body, button, input {
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
  }
 body > section:not([id="landing"]) {
     background-color: white;
 }
 input {
-     outline: none; border: none;
- }
+    outline: none;
+    border: none;
+}
 figure, p {
-     margin: 0;
+    margin: 0;
  }
-
 .nav-item .nav-link:hover {
     background-color: white;
     border-radius: 10px;
@@ -30,10 +30,10 @@ figure, p {
     border-width: 1px !important;
 }
 .btn {
-     padding: .2em 1.4em !important;
+    padding: .2em 1.4em !important;
  }
 .bg-white {
-     background-color: white !important;
+    background-color: white !important;
  }
 .bg-fancy {
     background-color: #2e38f2;
@@ -41,7 +41,7 @@ figure, p {
     background-attachment: fixed;
 }
 .dimmed {
-     background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .8);
  }
 .text-muted {
     color: inherit !important;
@@ -60,149 +60,4 @@ figure, p {
 .shadow-2 {
     position: relative;
     box-shadow: 0 0 25px rgba(97, 97, 97, .52);
-}
-
-#landing{
-    background-image: linear-gradient(to right,rgba(184,184,184,0.26),rgba(184,184,184,0.44));
-}
-
-#landing video{
-    z-index: -100;
-    min-width: 100%;
-    transform: scale(0.5) translate(-50%,-50%);
-    filter: blur(10px);
-}
-#landing #content{
-    margin-top: 16vh;
-    padding-bottom: 20vh;
-}
-
-#landing button{
-    background-color: white;
-    color: #292929;
-    border: 2px solid white;
-}
-#landing button:hover{
-    background-color: transparent;
-    color: white;
-}
-#our-team{
-    padding: 5.6rem 0;
-}
-
-#our-team img{
-    height: 270px;
-    object-fit: cover;
-}
-
-#our-team i{
-    transition: opacity 0.2s;
-}
-#our-team i:hover{
-    transition: opacity 0.5s;
-}
-#our-team .card > div{
-    background-color: rgba(30, 30, 30, 0.7);
-    transform: translateX(-100%);
-    transition: transform 0.35s;
-}
-#our-team .card:hover > div{
-    transform: translateX(0);
-}
-
-#info{
-    background-color: #54C65E;
-}
-
-#info .col-md-4:nth-child(2){
-    transform: scale(1.1);
-}
-@media (max-width:768px) {
-    #info .col-md-4:nth-child(2){
-        transform: scale(1);
-    }
-}
-
-#portfolio{
-    padding: 100px 0;
-}
-#portfolio .port-item{
-    height: 200px;
-    position: relative;
-}
-
-#portfolio .port-item > *{
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-#portfolio .port-item::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    transition: background-color 0.3s;
-}
-#portfolio .port-item:hover * {
-    opacity: 1;
-}
-#portfolio .port-item:hover::before{
-    background-color: rgba(39, 39, 39, 0.7);
-}
-@media (max-width : 992px) {
-    #portfolio .port-item{
-        height: 500px;
-    }
-}
-
-#pricing{
-    background-color: #F7F7F7;
-    padding: 4vw 0 6vw;
-}
-@media (min-width:992px) {
-    #pricing .card{
-        transition: all 0.3s;
-    }
-    #pricing .col-lg-4:nth-child(2){
-        transform: scale(1.1);
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
-        z-index: 1;
-    }
-    #pricing .card:hover{
-        transform: scale(1.05) translateY(14px);
-        z-index: 10;
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
-    }
-}
-
-#faq{
-    padding: 4vw 0;
-    background-color: #ffffffD6;
-    background-size: cover;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23000' fill-opacity='.1' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
-}
-
-#footer{
-    padding: 4vw 0 0;
-}
-
-#footer #map{
-    height: 450px;
-}
-
-#footer *{
-    line-height: 180%;
-}
-
-#footer #footer-bottom{
-    background-color: #64C65E;
-}
-@media (max-width :992px) {
-    #footer $contact{
-        border: none !important;
-    }
 }
