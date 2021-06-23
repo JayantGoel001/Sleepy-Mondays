@@ -149,3 +149,22 @@ figure, p {
         height: 500px;
     }
 }
+#pricing{
+    background-color: #F7F7F7;
+    padding: 4vw 0 6vw;
+}
+@media (min-width: 992px) {
+    #pricing .card{
+        transition: all 0.3s;
+    }
+    #pricing .col-lg-4:nth-child(2){
+        transform: scale(1.1);
+        z-index: 1;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    }
+    #pricing .card:hover{
+        transform: scale(1.05) translateY(14px);
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+        z-index: 10;
+    }
+}
